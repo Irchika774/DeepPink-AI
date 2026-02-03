@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Main Brand Colors */
+  --color-primary: #EC4899;
+  --color-primary-soft: #FCE7F3;
+  
+  /* Sidebar & Layout */
+  --color-sidebar: #FDF2F8; /* This replaces the dark #292a2d */
+  --color-bg-main: #FFFFFF;
+  --color-border-soft: #FBCFE8;
+
+  /* Typography */
+  --color-text-main: #1F2937;
+  --color-text-muted: #6B7280;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+/* Hide scrollbar but keep scroll working */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
