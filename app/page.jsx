@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div className="bg-[var(--color-bg-main)] h-screen">
-      <div className="flex h-full">
+      <div className="flex h-screen">
         
         {/* ================= Sidebar ================= */}
         <Sidebar expand={expand} setExpand={setExpand} />
