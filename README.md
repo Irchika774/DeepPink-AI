@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌸 PinkSeek AI
 
-## Getting Started
+A modern AI chatbot built with **React, Next.js, Groq AI, and MongoDB Atlas**.
 
-First, run the development server:
+PinkSeek is a full-stack AI assistant with a cute pink-themed interface, secure authentication, and persistent chat history.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🤖 **AI-Powered Conversations**
+- Chat with an intelligent AI assistant powered by Groq API (Llama 3.3).
+- Get fast and helpful AI responses.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔐 **Secure Authentication**
+- User authentication and account management using Clerk.
+- Protected user-specific chat data.
 
-## Learn More
+💬 **Persistent Chat History**
+- Store conversations permanently using MongoDB Atlas.
+- Access previous chats anytime.
 
-To learn more about Next.js, take a look at the following resources:
+📝 **Automatic Chat Titles**
+- Automatically generates chat titles from the first user message.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🗂️ **Chat Management**
+- Create new conversations.
+- Rename chats.
+- Delete unwanted conversations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎀 **Modern Pink-Themed UI**
+- Custom-designed interface with a friendly AI assistant experience.
+- Responsive design for different screen sizes.
 
-## Deploy on Vercel
+⚡ **Full-Stack Integration**
+- Complete integration of frontend, backend APIs, authentication, database, and AI services.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🛠️ Tech Stack
+
+## Frontend
+
+- ⚛️ React
+- ▲ Next.js (App Router)
+- 🎨 Tailwind CSS
+- JavaScript / JSX
+
+## Backend
+
+- Next.js API Routes
+- Node.js
+- REST API Architecture
+
+## Database
+
+- 🍃 MongoDB Atlas
+- Mongoose ODM
+
+## Authentication
+
+- 🔐 Clerk Authentication
+
+## Artificial Intelligence
+
+- 🤖 Groq API
+- Llama 3.3 Model
+
+---
+
+# 📂 Project Structure
+
+```text
+DeepPink-AI/
+│
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       ├── ai/
+│   │       ├── create/
+│   │       ├── delete/
+│   │       ├── get/
+│   │       ├── messages/
+│   │       └── rename/
+│   │
+│   ├── page.jsx
+│   ├── layout.tsx
+│   └── globals.css
+│
+├── components/
+│   ├── Message.jsx
+│   ├── ChatLabel.jsx
+│   └── UI assets
+│
+├── config/
+│   └── db.js
+│
+├── context/
+│   └── AppContext.jsx
+│
+├── models/
+│   ├── Chat.js
+│   └── User.js
+│
+└── package.json
