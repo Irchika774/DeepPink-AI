@@ -19,6 +19,7 @@ export async function POST(req) {
   }
 
   const client = new OpenAI({
+
     apiKey,
     baseURL: "https://api.groq.com/openai/v1",
   });
@@ -76,7 +77,7 @@ export async function POST(req) {
 
     // Ask Groq
     const completion = await client.chat.completions.create({
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       messages: [
         {
           role: "system",
@@ -88,6 +89,8 @@ export async function POST(req) {
       temperature: 0.7,
       max_tokens: 2048,
     });
+
+    
 
     const assistantReply =
       completion.choices[0]?.message?.content ||
